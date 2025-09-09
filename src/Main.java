@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        // 1
         int intVar = 9 * 1234567;
         byte byteVar = 50;
         short shortVar = -2500;
@@ -13,6 +14,7 @@ public class Main {
         System.out.println("Значение переменной floatVar с типом float равно " + floatVar);
         System.out.println("Значение переменной doubleVar с типом double равно " + doubleVar);
 
+        // 2
         float num1 = 27.12f;
         long num2 = 987_678_965_549L;
         double num3 = 2.786;
@@ -21,13 +23,15 @@ public class Main {
         int num6 = 27897;
         byte num7 = 67;
 
+        // 3
         byte LPstudents = 23;
         byte ASstudents = 27;
         byte EAstudents = 30;
         short totalSheets = 480;
-        int sheetsPerStudent = totalSheets / LPstudents + ASstudents + EAstudents;
+        int sheetsPerStudent = totalSheets / (LPstudents + ASstudents + EAstudents);
         System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов бумаги");
 
+        // 4
         int bottlesPerMinute = 16 / 2;
         int bottlesIn20Minutes = bottlesPerMinute * 20;
         int bottlesPerDay = bottlesPerMinute * 60 * 24;
@@ -38,15 +42,17 @@ public class Main {
         System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок");
         System.out.println("За месяц машина произвела " + bottlesInMonth + " штук бутылок");
 
+        // 5
         int totalPaint = 120;
         int whitePaintPerClass = 2;
         int brownPaintPerClass = 4;
-        int classes = totalPaint / whitePaintPerClass + brownPaintPerClass;
+        int classes = totalPaint / (whitePaintPerClass + brownPaintPerClass);
         int totalWhitePaint = classes * whitePaintPerClass;
         int totalBrownPaint = classes * brownPaintPerClass;
         System.out.println("В школе, где " + classes + " классов, нужно " + totalWhitePaint +
                 " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
 
+        // 6
         int bananas = 5;
         int bananaGram = 80;
         int milkMl = 200;
@@ -64,6 +70,7 @@ public class Main {
         System.out.println("Вес спортзавтрака в граммах: " + totalWeightGrams);
         System.out.println("Вес спортзавтрака в килограммах: " + totalWeightKg);
 
+        // 7
         int weightLossKg = 7;
         int weightLossGrams = weightLossKg * 1000;
         int lossPerDay250 = 250;
@@ -75,6 +82,7 @@ public class Main {
         System.out.println(daysAt500 + " дней при похудении на 500 г в день");
         System.out.println("В среднем для похудения может потребоваться " + averageDays + " дней");
 
+        // 8
         int mashaSalary = 67760;
         int denisSalary = 83690;
         int kristinaSalary = 76230;
